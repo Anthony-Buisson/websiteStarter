@@ -90,7 +90,7 @@ const config = {
 	"mode": {
 		/*		"view": {
 					"dest": ".",
-					"sprite": "sprite_css_pictos.svg",
+					"sprite": "sprite_pictos.svg",
 					"bust": false
 				},
 		*/
