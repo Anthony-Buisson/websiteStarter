@@ -364,4 +364,132 @@ template {
   }
 }
 
+.bg-dark {
+  background-color: #d6d6d6;
+}
+
+.menu {
+  position: relative;
+  padding: 0;
+}
+
+.menu .menu_burger {
+  padding-left: 2rem;
+  display: block;
+}
+
+.menu .menu_burger h1 {
+  -ms-flex-direction: row;
+      flex-direction: row;
+  margin: 0;
+  padding-left: 1rem;
+  text-align: center;
+}
+
+.menu .menu_burger .menu_burger-icon {
+  -ms-flex-direction: column;
+      flex-direction: column;
+  -ms-flex-pack: start;
+      justify-content: flex-start;
+  margin: 0;
+}
+
+.menu .menu_burger-icon {
+  margin-right: 0.5em;
+  height: 20px;
+  z-index: 5;
+}
+
+.menu .menu_burger-icon span {
+  position: relative;
+  top: 50%;
+  width: 30px;
+  height: 2px;
+  display: block;
+  background: #020304;
+  transition: .5s;
+}
+
+.menu .menu_burger-icon span:first-child {
+  top: 3px;
+}
+
+.menu .menu_burger-icon span:last-child {
+  top: 16px;
+}
+
+.menu .menu_burger-icon label:hover {
+  cursor: pointer;
+}
+
+.menu .menu_li {
+  display: none;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+.menu a {
+  text-decoration: none;
+  color: white;
+}
+
+.menu:hover .menu_burger-icon span:nth-child(1) {
+  -webkit-transform: translate(-10px, 9px) rotate(-90deg);
+          transform: translate(-10px, 9px) rotate(-90deg);
+}
+
+.menu:hover .menu_burger-icon span:nth-child(2) {
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+.menu:hover .menu_burger-icon span:nth-child(3) {
+  -webkit-transform: translate(10px, -8px) rotate(-90deg);
+          transform: translate(10px, -8px) rotate(-90deg);
+}
+
+.menu:hover .menu_li, .menu:hover .menu_li:hover {
+  display: block;
+  position: relative;
+  background-color: green;
+}
+
+.menu .menu_burger h1, .menu .menu_burger .menu_burger-icon {
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  vertical-align: middle;
+}
+
+@media (min-width: 764px) {
+  .menu {
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .menu .menu_li {
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    position: relative;
+    vertical-align: middle;
+    padding: 0 0.2rem;
+    -ms-flex-item-align: center;
+        align-self: center;
+  }
+  .menu .menu_burger {
+    padding-right: 1rem;
+  }
+  .menu .menu_burger .menu_burger-icon {
+    display: none;
+  }
+  .menu:hover .menu_li, .menu .menu_li:hover {
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    background-color: #d6d6d6;
+  }
+  .menu .menu_li:hover a {
+    background-color: #a3a3a3;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
